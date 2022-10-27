@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/zuri-persona/static/css/main.4037852c.css",
-    "main.js": "/zuri-persona/static/js/main.1bcd4293.js",
+    "main.css": "/zuri-persona/static/css/main.281ccddd.css",
+    "main.js": "/zuri-persona/static/js/main.3ebe8313.js",
     "static/js/787.34c68c79.chunk.js": "/zuri-persona/static/js/787.34c68c79.chunk.js",
     "index.html": "/zuri-persona/index.html",
-    "main.4037852c.css.map": "/zuri-persona/static/css/main.4037852c.css.map",
-    "main.1bcd4293.js.map": "/zuri-persona/static/js/main.1bcd4293.js.map",
+    "main.281ccddd.css.map": "/zuri-persona/static/css/main.281ccddd.css.map",
+    "main.3ebe8313.js.map": "/zuri-persona/static/js/main.3ebe8313.js.map",
     "787.34c68c79.chunk.js.map": "/zuri-persona/static/js/787.34c68c79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4037852c.css",
-    "static/js/main.1bcd4293.js"
+    "static/css/main.281ccddd.css",
+    "static/js/main.3ebe8313.js"
   ]
 }
