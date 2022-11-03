@@ -254,6 +254,13 @@ a{
 }
 
 /*contact style*/
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #contact-title{
   font-family: Inter;
   font-size:36px;
@@ -272,7 +279,9 @@ a{
   font-style: normal;
   letter-spacing: -0.02em;
   color: #475467;
+  text-align: left;
 }
+
 @media only screen and (max-width:768px){
   
   html, body {
@@ -476,6 +485,4 @@ a:hover{
   text-align: center;
   color: grey;
 }
-
-
 }
