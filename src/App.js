@@ -2,6 +2,7 @@
 import Homepage from "./components/Homepage";
 import Contact from "./components/Contact";
 import Error from  "./components/Error";
+
 import {BrowserRouter as HashRouter, Routes, Route} from "react-router-dom"
 function App() {
   return (
