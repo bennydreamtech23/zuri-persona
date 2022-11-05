@@ -15,15 +15,15 @@ const handleSubmit = (e) =>{
   e.preventDefault()
   if(firstname && lastName && email){
     return(
-      <h2 className="error">Success</h2>
+   setMessage("Submitted Successfully")
       )
+  setMessage("")
+  setLastName("")
+  setFirstName("")
+  setEmail("")
   }
   setName(()=>{
-    return(
-      <p>
-      Zuri
-      </p>
-      )
+  setMessage("Error try again later")
   })
 }
   return(
@@ -34,7 +34,7 @@ const handleSubmit = (e) =>{
     <h1 id="contact-title">Contact Me</h1>
     <p id="text-title">Hi there, contact me to ask anything you have in mind.</p>
     </div>
-    
+  
     <form onSubmit={handleSubmit}>
     <div className="row g-3">
     <div className="col-auto">
