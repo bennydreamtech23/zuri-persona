@@ -1,22 +1,15 @@
-
-import Buttons from "./Buttons";
-import Header from "./Header";
-import Footer from "./Footer";
-import Contact from "./Contact";
-
-const Tasks = ()=>{
-  return(
+ 
     <main className="App-header container-fluid p-5">
     <div>
     <Header />
         </div>
         
         <div className="btn_groups" tabindex="0">
-        
         <Buttons href="https://mobile.twitter.com/bennydreams2326" text="Twitter Link" id="twitter"/>
-      
-       {/*<Buttons href="https://hng9.slack.com/archives/D04883VAN0M" text="BenedictaUwabunkeonye" id="slack"/>*/}
+         <Buttons href="https://hng9.slack.com/archives/D04883VAN0M" text="BenedictaUwabunkeonye" id="slack"/>
        
+  
+
         <Buttons href= "https://training.zuri.team/" target="_blank"
         text="Zuri Team" id="btn__zuri" tabindex="1"/>
         
@@ -27,11 +20,6 @@ const Tasks = ()=>{
         <Buttons href="https://backgroundcheck.zuri.team/" text="Background Checks for Coders" id="pitch" tabindex="1" title="Background Check on coders"/>
         
         <Buttons href="https://books.zuri.team/design-rules" text="Design Books" id="book__design" tabindex="1" title="free design book offered by Zuri"/>
-        <Contact/>
         </div>
         <Footer />
     </main>
-    )
-}
-
-export default Tasks

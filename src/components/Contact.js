@@ -1,18 +1,23 @@
 
 import React, { useState } from 'react';
 import {useNavigate} from "react-router-dom"
-
+import Footer from "./Footer";
 const Contact = () =>{
   let navigate = useNavigate();
   
   const [firstname, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
-const [email, setEmail] = useState("johndoe@gmail.com")
+const [email, setEmail] = useState("")
 const [message, setMessage] = useState("hello world")
-const [name, setName] = useState("Zuri")
+const [name, setName] = useState("Uwabunkeonye Ijeoma")
 
 const handleSubmit = (e) =>{
   e.preventDefault()
+  if(firstname && lastName && email){
+    return(
+      <h2 className="error">Success</h2>
+      )
+  }
   setName(()=>{
     return(
       <p>
@@ -54,8 +59,8 @@ const handleSubmit = (e) =>{
     </div>
     
     <div>
-    <input type="checkbox" className="me-2"/>
-    <label>You agree to providing your data to {name} who may contact you</label>
+    <input type="checkbox" className="me-2 form-check-input"/>
+    <label className= "form-check-label">You agree to providing your data to {name} who may contact you</label>
     </div>
     
     <div className="d-grid mt-3">
@@ -63,7 +68,9 @@ const handleSubmit = (e) =>{
     </div>
     </form>
     </section>
-    <button onClick={()=> {navigate("/")}}> go to index page</button>
+  <button onClick={()=> {navigate("/")}} type="button" className="btn1">Homepage</button>
+    <Footer/>
+
     </main>
     )
 }
