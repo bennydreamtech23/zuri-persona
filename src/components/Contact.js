@@ -8,14 +8,14 @@ const Contact = () =>{
   const [firstname, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
 const [email, setEmail] = useState("")
-const [message, setMessage] = useState("hello world")
+const [message, setMessage] = useState("Send me a message and I'll reply as soon as possible")
 
 const handleSubmit = (e) =>{
   e.preventDefault()
-  if(firstname && lastName && email){
-   setMessage("Submitted Successfully")
+  if(firstname && lastName && email && message){
+   alert("Submitted Successfully")
   }else{
-  setMessage("Error try again later")
+  alert("Error try again later")
   }
   
 setMessage("");
