@@ -16,11 +16,11 @@ const handleSubmit = (e) =>{
   if(firstname && lastName && email){
     return(
    setMessage("Submitted Successfully")
-      )
   setMessage("")
   setLastName("")
   setFirstName("")
   setEmail("")
+  )
   }
   setName(()=>{
   setMessage("Error try again later")
