@@ -16,16 +16,17 @@ const handleSubmit = (e) =>{
   if(firstname && lastName && email){
     return(
    setMessage("Submitted Successfully")
-  setMessage("")
-  setLastName("")
-  setFirstName("")
-  setEmail("")
   )
-  }
-  setName(()=>{
+  }else{
   setMessage("Error try again later")
-  })
+  }
+  
+setMessage("");
+  setLastName("");
+  setFirstName("");
+  setEmail("");
 }
+
   return(
     <main  className="contact container-fluid">
     <section className="p-3">
