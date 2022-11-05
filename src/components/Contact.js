@@ -9,14 +9,11 @@ const Contact = () =>{
   const [lastName, setLastName] = useState("")
 const [email, setEmail] = useState("")
 const [message, setMessage] = useState("hello world")
-const [name, setName] = useState("Uwabunkeonye Ijeoma")
 
 const handleSubmit = (e) =>{
   e.preventDefault()
   if(firstname && lastName && email){
-    return(
    setMessage("Submitted Successfully")
-  )
   }else{
   setMessage("Error try again later")
   }
@@ -61,7 +58,7 @@ setMessage("");
     
     <div>
     <input type="checkbox" className="me-2 form-check-input"/>
-    <label className= "form-check-label">You agree to providing your data to {name} who may contact you</label>
+    <label className= "form-check-label">You agree to providing your data to Uwabunkeonye Ijeoma who may contact you</label>
     </div>
     
     <div className="d-grid mt-3">
